@@ -1,103 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-     <link rel="stylesheet" href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\.vscode\style.css">
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body id = "body-resume">
+  <head>
+    <link rel="stylesheet" href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\.vscode\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body id = "body-resume">
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\mainPage.html">Home</a>
-  <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\resume.html">Resume</a>
-  <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\projects.html">Projects</a>
-  <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\Blog.html">Blogs</a>
-</div>
-
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰</button>  
-  <h2>Resume</h2>
-  <h3>Skills</h3>
-  <!-- Skill moveable tables-->
-  <h3>Technical Skills</h3>
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="skill-box">C++</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">HTML/CSS</div>
-      <div class="skill-box">JavaScript</div>
-      <div class="skill-box">Java</div>
-      <div class="skill-box">SQL</div>
-      <div class="skill-box">Object-oriented programming (OOP)</div>
-      <div class="skill-box">Web development</div>
-      <div class="skill-box">R</div>
-      <div class="skill-box">Kali Linux</div>
-      <div class="skill-box">Wireshark</div>
-      <div class="skill-box">Metasploit</div>
-      <div class="skill-box">Cybersecurity</div>
-      <div class="skill-box">Excel</div>
-      <div class="skill-box">Spring boot</div>
-      <div class="skill-box">REACT</div>
-      <div class="skill-box">RapidMiner Studio</div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\mainPage.html">Home</a>
+      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\resume.html">Resume</a>
+      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\projects.html">Projects</a>
+      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\Blog.html">Blogs</a>
     </div>
-  </div>
-  <h3>Soft Skills</h3>
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="skill-box">Communication</div>
-      <div class="skill-box">Flexibility</div>
-      <div class="skill-box">Creativity</div>
-      <div class="skill-box">Adaptability</div>
-      <div class="skill-box">Research</div>
-      <div class="skill-box">Active listener</div>
-      <div class="skill-box">Problem Solving</div>
-      <div class="skill-box">Attention to detail</div>
-      <div class="skill-box">Multi-tasking</div>
-      <div class="skill-box">Organisation</div>
-      <div class="skill-box">Growth Mindset</div>
-      <div class="skill-box">Emotional Intelligence</div>
-      <div class="skill-box">Project Management</div>
-      <div class="skill-box">Design</div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      <h2>Resume</h2>
+      <h3>Skills</h3>
+      <!-- Skill moveable tables-->
+      <h3>Technical Skills</h3>
+      <div class="controls">
+        <button class="arrow" id="left">&#9664;</button>
+
+        <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="skill-box">C++</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">HTML/CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">Object-oriented programming (OOP)</div>
+            <div class="skill-box">Web development</div>
+            <div class="skill-box">R</div>
+            <div class="skill-box">Kali Linux</div>
+            <div class="skill-box">Wireshark</div>
+            <div class="skill-box">Metasploit</div>
+            <div class="skill-box">Cybersecurity</div>
+            <div class="skill-box">Excel</div>
+            <div class="skill-box">Spring boot</div>
+            <div class="skill-box">REACT</div>
+            <div class="skill-box">RapidMiner Studio</div>
+          </div>
+        </div>
+        <button class="arrow" id="right">&#9654;</button>
+      </div>
+      <h3>Soft Skills</h3>
+      <div class="controls">
+        <button class="arrow" id="left">&#9664;</button>
+
+        <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="skill-box">Communication</div>
+            <div class="skill-box">Flexibility</div>
+            <div class="skill-box">Creativity</div>
+            <div class="skill-box">Adaptability</div>
+            <div class="skill-box">Research</div>
+            <div class="skill-box">Active listener</div>
+            <div class="skill-box">Problem Solving</div>
+            <div class="skill-box">Attention to detail</div>
+            <div class="skill-box">Multi-tasking</div>
+            <div class="skill-box">Organisation</div>
+            <div class="skill-box">Growth Mindset</div>
+            <div class="skill-box">Emotional Intelligence</div>
+            <div class="skill-box">Project Management</div>
+            <div class="skill-box">Design</div>
+          </div>
+        </div>
+        <button class="arrow" id="right">&#9654;</button>
+      </div>
+      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf" download="Savannah Resume">Download</a>
+      <!-- <embed class="image-container" src="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf"  />-->
     </div>
-  </div>
-  <div class="hint">Use ← → arrow keys</div>
-  <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf" download="Savannah Resume">Download</a>
-  <!-- <embed class="image-container" src="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf"  />-->
-  <p>...</p>
-</div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
 
-const slider = document.getElementById("slider");
-const boxWidth = 240;
-const visibleBoxes = 3;
-const totalBoxes = slider.children.length;
+      const slider = document.getElementById("slider");
+      const leftBtn = document.getElementById("left");
+      const rightBtn = document.getElementById("right");
 
-let index = 0;
 
-document.addEventListener("keydown", (e) => {
-  const maxIndex = totalBoxes - visibleBoxes;
-  if (e.key === "ArrowRight") {
-    index = Math.min(maxIndex, index + 1);
-  }
+      const boxWidth = 240;
+      const visibleBoxes = 3;
+      const totalBoxes = slider.children.length;
+      const maxIndex = totalBoxes - visibleBoxes;
 
-  if (e.key === "ArrowLeft") {
-    index = Math.max(0, index - 1);
-  }
 
-  slider.style.transform = `translateX(${-index * boxWidth}px)`;
-});
-</script>
-   
-</body>
+      let index = 0;
+
+
+      function updateSlider() {
+      slider.style.transform = `translateX(${-index * boxWidth}px)`;
+      }
+
+
+      leftBtn.addEventListener("click", () => {
+      index = Math.max(0, index - 1);
+      updateSlider();
+      });
+
+
+      rightBtn.addEventListener("click", () => {
+      index = Math.min(maxIndex, index + 1);
+      updateSlider();
+      });
+    </script>
+      
+  </body>
 </html> 
