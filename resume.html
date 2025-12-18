@@ -20,8 +20,8 @@
       <h3>Skills</h3>
       <!-- Skill moveable tables-->
       <h3>Technical Skills</h3>
-      <div class="controls">
-        <button class="arrow" id="left">&#9664;</button>
+      <div class="controls skill-section">
+        <button class="arrow left"></button>
 
         <div class="slider-container">
         <div class="slider" id="slider">
@@ -44,11 +44,11 @@
             <div class="skill-box">RapidMiner Studio</div>
           </div>
         </div>
-        <button class="arrow" id="right">&#9654;</button>
+        <button class="arrow right"></button>
       </div>
       <h3>Soft Skills</h3>
-      <div class="controls">
-        <button class="arrow" id="left">&#9664;</button>
+      <div class="controls skill-section">
+        <button class="arrow left"></button>
 
         <div class="slider-container">
         <div class="slider" id="slider">
@@ -68,12 +68,11 @@
             <div class="skill-box">Design</div>
           </div>
         </div>
-        <button class="arrow" id="right">&#9654;</button>
+        <button class="arrow right"></button>
       </div>
-      <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf" download="Savannah Resume">Download</a>
-      <!-- <embed class="image-container" src="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf"  />-->
     </div>
-
+    <a href="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf" download="Savannah Resume">Download</a>
+    <!-- <embed class="image-container" src="C:\Users\User\Documents\GitHub\ResumeWebsite-projects-blog-etc\August 2025 Savannah Fox Resume.pdf"  />-->
     <script>
       function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
@@ -85,34 +84,31 @@
         document.getElementById("main").style.marginLeft= "0";
       }
 
-      const slider = document.getElementById("slider");
-      const leftBtn = document.getElementById("left");
-      const rightBtn = document.getElementById("right");
+      const BOX_WIDTH = 240;
+      const VISIBLE_BOXES = 2;
 
+      document.querySelectorAll(".skill-section").forEach(section => {
+        const slider = section.querySelector(".slider");
+        const leftBtn = section.querySelector(".left");
+        const rightBtn = section.querySelector(".right");
 
-      const boxWidth = 240;
-      const visibleBoxes = 3;
-      const totalBoxes = slider.children.length;
-      const maxIndex = totalBoxes - visibleBoxes;
+        const totalBoxes = slider.children.length;
+        const maxIndex = totalBoxes - VISIBLE_BOXES;
+        let index = 0;
 
+        function update() {
+          slider.style.transform = `translateX(${-index * BOX_WIDTH}px)`;
+        }
 
-      let index = 0;
+        leftBtn.addEventListener("click", () => {
+          index = Math.max(0, index - 1);
+          update();
+        });
 
-
-      function updateSlider() {
-      slider.style.transform = `translateX(${-index * boxWidth}px)`;
-      }
-
-
-      leftBtn.addEventListener("click", () => {
-      index = Math.max(0, index - 1);
-      updateSlider();
-      });
-
-
-      rightBtn.addEventListener("click", () => {
-      index = Math.min(maxIndex, index + 1);
-      updateSlider();
+        rightBtn.addEventListener("click", () => {
+          index = Math.min(maxIndex, index + 1);
+          update();
+        });
       });
     </script>
       

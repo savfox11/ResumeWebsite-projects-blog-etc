@@ -105,10 +105,10 @@ body {
 
 /* Skill text boxes */
 .slider-container {
-width: 720px;
-overflow: hidden;
-border: 3px solid #475569;
-background: #0097b2;
+  width: 720px;
+  overflow: hidden;
+  border: 3px solid #475569;
+  background: #0097b2;
 }
 
 .slider {
@@ -139,15 +139,15 @@ background: #0097b2;
   color: #0097b2;
 }
 
-.body-resume {
+#body-resume {
   margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0f172a;
+  background: white;
   font-family: Arial, sans-serif;
-  color: #e5e7eb;
+  color: black;
 }
 
 .controls {
@@ -164,13 +164,19 @@ background: #0097b2;
   border: none;
   font-size: 28px;
   cursor: pointer;
-  background: #1e293b;
-  color: #e5e7eb;
+  background: #0097b2;
+  color: #0f172a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transition: transform 0.15s ease, background 0.15s ease;
 }
 
 
+
 .arrow:hover {
-  background: #0097b2;
+  background: #095a68;
   transform: scale(1.1);
 }
