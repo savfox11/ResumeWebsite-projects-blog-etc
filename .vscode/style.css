@@ -132,12 +132,6 @@ body {
   border-right: none;
 }
 
-.hint {
-  position: fixed;
-  bottom: 20px;
-  font-size: 14px;
-  color: #0097b2;
-}
 
 #body-resume {
   margin: 0;
@@ -158,25 +152,64 @@ body {
 
 
 .arrow {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: none;
   border: none;
-  font-size: 28px;
   cursor: pointer;
-  background: #0097b2;
-  color: #0f172a;
+  position: relative;
+  padding: 0;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.arrow::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #0f172a;
+  border-right: 3px solid #0f172a;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+}
 
-  transition: transform 0.15s ease, background 0.15s ease;
+/* LEFT arrow */
+.arrow.left::before {
+  transform: rotate(-135deg);
+}
+
+/* RIGHT arrow */
+.arrow.right::before {
+  transform: rotate(45deg);
+}
+
+/* Hover effect */
+.arrow.left:hover::before {
+  transform: rotate(-135deg) scale(1.15);
+}
+
+.arrow.right:hover::before {
+  transform: rotate(45deg) scale(1.15);
 }
 
 
+/*Education and experience table*/
+.Education-Experience-Table {
+  background: white;
+  font-family: Arial, sans-serif;
+  color: black;
+  width: 720px;
+}
 
-.arrow:hover {
-  background: #095a68;
-  transform: scale(1.1);
+.Education-Experience-Table-Row {
+  background: white;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.Education-Experience-Table-Col {
+  background: white;
+  font-family: Arial, sans-serif;
+  color: black;
+  width: 50%;
+  border-right: 1px solid #334155;
 }
